@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.PerqaraRAWG.ShapeAppearanceOverlay.CornerSize.12" parent="">
+        <item name="cornerSize">@dimen/spacing_12</item>
+    </style>
+</resources>

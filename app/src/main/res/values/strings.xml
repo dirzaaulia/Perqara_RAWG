@@ -1,3 +1,10 @@
 <resources>
-    <string name="app_name">BaseProject</string>
+    <string name="app_name">Perqara RAWG</string>
+    <string name="release_date_format">Release Date: %s</string>
+    <string name="home_title">Games For You</string>
+    <string name="search_game">Search Game</string>
+    <string name="empty_games">There Is No Games Found</string>
+    <string name="favorite_title">Favorite Games</string>
+    <string name="rating_count_format">From %d reviews</string>
+    <string name="detail_title">Detail</string>
 </resources>

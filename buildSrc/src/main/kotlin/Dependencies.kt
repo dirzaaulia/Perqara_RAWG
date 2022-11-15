@@ -3,9 +3,11 @@ import org.gradle.api.artifacts.dsl.DependencyHandler
 object Dependencies  {
     object AndroidX {
         private const val coreKtx = "androidx.core:core-ktx:${Version.coreKtx}"
+        private const val swipeRefreshLayout = "androidx.swiperefreshlayout:swiperefreshlayout:${Version.swipeRefreshLayout}"
 
         val implementation = arrayListOf<String>().apply {
             add(coreKtx)
+            add(swipeRefreshLayout)
         }
     }
 
@@ -118,6 +120,30 @@ object Dependencies  {
             add(retrofit)
         }
     }
+
+    object Room {
+        private const val compiler = "androidx.room:room-compiler:${Version.room}"
+        private const val ktx = "androidx.room:room-ktx:${Version.room}"
+        private const val paging = "androidx.room:room-paging:${Version.room}"
+        private const val runtime = "androidx.room:room-runtime:${Version.room}"
+
+        val implementation = arrayListOf<String>().apply {
+            add(ktx)
+            add(paging)
+            add(runtime)
+        }
+
+        val kapt = arrayListOf<String>().apply {
+            add(compiler)
+        }
+    }
+    object Shimmer {
+        private const val shimmer = "com.facebook.shimmer:shimmer:${Version.shimmer}"
+
+        val implementation = arrayListOf<String>().apply {
+            add(shimmer)
+        }
+    }
 }
 
 fun DependencyHandler.kapt(list: List<String>) {
@@ -147,5 +173,11 @@ fun DependencyHandler.debugImplementation(list: List<String>) {
 fun DependencyHandler.releaseImplementation(list: List<String>) {
     list.forEach { dependency ->
         add("releaseImplementation", dependency)
+    }
+}
+
+fun DependencyHandler.testImplementation(list: List<String>) {
+    list.forEach { dependency ->
+        add("testImplementation", dependency)
     }
 }

@@ -6,6 +6,7 @@ plugins {
     id("org.jetbrains.kotlin.kapt") version Version.kotlin apply false
     id("org.jetbrains.kotlin.plugin.parcelize") version Version.kotlin apply false
     id("com.google.dagger.hilt.android") version Version.hiltGradle apply false
+    id("androidx.navigation.safeargs.kotlin") version Version.navigation apply false
 }
 
 tasks.register("clean", Delete::class) {

@@ -1,9 +1,9 @@
 <resources>
 
     <!--Final, top-level theme-->
-    <style name="Theme.BaseProject.DayNight" parent="Theme.BaseProject.Dark" />
+    <style name="Theme.PerqaraRAWG.DayNight" parent="Theme.PerqaraRAWG.Dark" />
 
-    <style name="Theme.BaseProject.Dark" parent="Theme.BaseProject">
+    <style name="Theme.PerqaraRAWG.Dark" parent="Theme.PerqaraRAWG">
         <item name="colorPrimary">@color/md_theme_dark_primary</item>
         <item name="colorOnPrimary">@color/md_theme_dark_onPrimary</item>
         <item name="colorPrimaryContainer">@color/md_theme_dark_primaryContainer</item>

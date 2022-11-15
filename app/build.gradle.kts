@@ -3,6 +3,8 @@ plugins {
     kotlin("android")
     kotlin("kapt")
     id("kotlin-parcelize")
+    id("dagger.hilt.android.plugin")
+    id("androidx.navigation.safeargs.kotlin")
 }
 
 android {
@@ -72,8 +74,11 @@ dependencies {
     implementation(Dependencies.Other.implementation)
     implementation(Dependencies.Paging3.implementation)
     implementation(Dependencies.Retrofit.implementation)
+    implementation(Dependencies.Room.implementation)
+    implementation(Dependencies.Shimmer.implementation)
 
     kapt(Dependencies.Hilt.kapt)
+    kapt(Dependencies.Room.kapt)
 
     debugImplementation(Dependencies.Chucker.debugImplementation)
     releaseImplementation(Dependencies.Chucker.releaseImplementation)

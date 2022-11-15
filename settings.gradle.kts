@@ -13,5 +13,5 @@ dependencyResolutionManagement {
         mavenCentral()
     }
 }
-rootProject.name = "Base Project"
+rootProject.name = "Perqara RAWG"
 include(":app")

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/spacing_8">
+
+    <View
+        android:id="@+id/shimmer_image"
+        android:layout_width="@dimen/spacing_156"
+        android:layout_height="0dp"
+        android:background="@drawable/bg_shimmer"
+        app:layout_constraintTop_toTopOf="@id/container_info"
+        app:layout_constraintBottom_toBottomOf="@id/container_info"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/container_info"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/spacing_12"
+        android:orientation="vertical"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toEndOf="@id/shimmer_image"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <View
+            android:id="@+id/shimmer_title"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/spacing_72"
+            android:background="@drawable/bg_shimmer"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <View
+            android:id="@+id/shimmer_release_date"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/spacing_24"
+            android:layout_marginTop="@dimen/spacing_2"
+            android:background="@drawable/bg_shimmer"
+            app:layout_constraintTop_toBottomOf="@id/shimmer_title" />
+
+        <View
+            android:id="@+id/shimmer_rating"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/spacing_24"
+            android:layout_marginTop="@dimen/spacing_2"
+            android:background="@drawable/bg_shimmer"
+            app:layout_constraintTop_toBottomOf="@id/shimmer_release_date" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
